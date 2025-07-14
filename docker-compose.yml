@@ -23,7 +23,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/workforce_tracker?schema=public"
+      DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/workforce_tracker?sslmode=disable"
       JWT_SECRET: "your-super-secret-jwt-key-change-in-production"
       PORT: "8080"
     depends_on:
